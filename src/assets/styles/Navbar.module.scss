@@ -1,0 +1,98 @@
+@import '@styles/colors.scss';
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.top-navigation {
+  position: relative;
+  background-color: white;
+  display: flex;
+  padding: 0.5rem 10.5rem 0.5rem 0.5rem;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 2px solid $gray;
+  margin-bottom: -2px;
+
+  .logo-wrapper {
+    width: 155px;
+    height: 30px;
+    position: relative;
+  }
+
+  .search-wrapper {
+    padding: 0 0.5rem;
+    flex-grow: 1;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    outline: 2px solid $gray;
+    border-radius: 0.125rem;
+
+    &:focus-within {
+      outline: 2px solid black;
+
+      i {
+        filter: none;
+      }
+    }
+
+    i {
+      content: url('../icons/search.svg');
+      filter: invert(98%) sepia(99%) saturate(2%) hue-rotate(165deg)
+        brightness(103%) contrast(69%);
+      height: 1.5rem;
+    }
+
+    input {
+      flex-grow: 1;
+      height: 100%;
+      border: none;
+      font-size: larger;
+
+      &::placeholder {
+        color: $gray;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(30px + 1rem + 2px);
+    width: 10rem;
+    background-color: $pink;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.bottom-navigation {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-bottom: 2px solid $gray;
+  margin-bottom: -2px;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+    &:hover {
+      font-weight: 900;
+    }
+  }
+}

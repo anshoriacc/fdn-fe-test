@@ -1,0 +1,19 @@
+@import '@styles/colors.scss';
+
+.ads-wrapper {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+
+  .ads {
+    background-color: $gray;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
