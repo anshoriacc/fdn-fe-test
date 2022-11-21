@@ -31,7 +31,10 @@ const Navbar = () => {
             placeholder="Search products, articles, topics, brands, etc"
           />
         </div>
-        <button>LOGIN / SIGNUP</button>
+        <button>
+          <i />
+          <span>LOGIN / SIGNUP</span>
+        </button>
       </nav>
       <nav className={styles['bottom-navigation']}>
         {navigations.map((navigation, index) => (

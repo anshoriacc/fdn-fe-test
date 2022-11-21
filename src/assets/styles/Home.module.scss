@@ -3,6 +3,10 @@
 .editor-choice {
   padding: 1rem 10vw;
 
+  @media (max-width: 996px) {
+    padding: 1rem;
+  }
+
   h2,
   h3 {
     margin: 0;
@@ -11,5 +15,51 @@
   h3 {
     font-weight: 400;
     color: #999;
+  }
+
+  .list-card {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (max-width: 996px) {
+      padding: 1rem;
+      justify-content: flex-start;
+    }
+
+    .ec-wrapper {
+      .editor {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+
+        .image-wrapper {
+          position: relative;
+          height: 3rem;
+          aspect-ratio: 1;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+
+        .name {
+          margin: 0;
+          font-weight: bolder;
+        }
+
+        .role {
+          font-size: smaller;
+          color: #999;
+          margin: 0;
+        }
+      }
+    }
   }
 }

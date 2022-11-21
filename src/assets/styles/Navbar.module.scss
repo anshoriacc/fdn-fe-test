@@ -3,6 +3,7 @@
 .header {
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 .top-navigation {
@@ -70,9 +71,20 @@
     border: none;
     cursor: pointer;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
 
     &:hover {
       opacity: 0.9;
+    }
+
+    i {
+      content: url(../icons/account.svg);
+      height: 1.5rem;
+      filter: invert(98%) sepia(95%) saturate(10%) hue-rotate(242deg)
+        brightness(103%) contrast(100%);
     }
   }
 }
@@ -85,6 +97,13 @@
   padding: 0.5rem;
   border-bottom: 2px solid $gray;
   margin-bottom: -2px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   a {
     text-decoration: none;
