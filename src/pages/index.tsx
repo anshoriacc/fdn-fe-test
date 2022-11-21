@@ -48,6 +48,7 @@ function EditorChoice() {
     <section className={styles['editor-choice']}>
       <h2>Editor&apos;s Choice</h2>
       <h3>Curated with love</h3>
+      <div></div>
     </section>
   );
 }
