@@ -9,6 +9,26 @@
   h3 {
     font-weight: 400;
     color: #999;
+    font-size: 1.125rem;
+  }
+
+  .ads-divider {
+    display: flex;
+    padding: 1rem 12vw;
+    flex-wrap: wrap;
+
+    .ads-margin {
+      margin-top: 4.5rem;
+    }
+
+    @media (max-width: 996px) {
+      padding: 1rem;
+
+      .ads-margin {
+        align-items: center;
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -90,5 +110,101 @@
     gap: 2rem;
     flex-wrap: wrap;
     margin-top: 1rem;
+  }
+}
+
+.latest-reviews {
+  padding: 1rem;
+  flex-grow: 1;
+
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    a {
+      text-decoration: none;
+      color: $pink;
+    }
+  }
+
+  .list-card {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .button {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+    button {
+      font-size: larger;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $pink;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: default;
+      }
+    }
+  }
+}
+
+.top-brands {
+  padding: 1rem 12vw;
+
+  @media (max-width: 996px) {
+    padding: 1rem;
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    a {
+      text-decoration: none;
+      color: $pink;
+    }
+  }
+
+  .brands {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .image-wrapper {
+      position: relative;
+      height: 4rem;
+      width: 10rem;
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .fdn {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: larger;
+    font-weight: bolder;
   }
 }
