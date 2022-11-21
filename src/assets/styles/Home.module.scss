@@ -1,0 +1,15 @@
+@import '@styles/colors.scss';
+
+.editor-choice {
+  padding: 1rem 10vw;
+
+  h2,
+  h3 {
+    margin: 0;
+  }
+
+  h3 {
+    font-weight: 400;
+    color: #999;
+  }
+}
