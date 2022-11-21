@@ -32,6 +32,7 @@ export default function Home() {
       <Navbar />
       <Ads text="Top Frame" width={970} height={50} />
       <Ads text="Billboard" width={970} height={250} />
+      <EditorChoice />
       <Ads
         text={'Horizontal\n(Internal campaign only)'}
         width={970}
@@ -43,5 +44,10 @@ export default function Home() {
 }
 
 function EditorChoice() {
-  return <section></section>;
+  return (
+    <section className={styles['editor-choice']}>
+      <h2>Editor&apos;s Choice</h2>
+      <h3>Curated with love</h3>
+    </section>
+  );
 }
