@@ -10,6 +10,12 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'imgcdn.femaledaily.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };

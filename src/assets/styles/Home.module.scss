@@ -1,12 +1,6 @@
 @import '@styles/colors.scss';
 
-.editor-choice {
-  padding: 1rem 10vw;
-
-  @media (max-width: 996px) {
-    padding: 1rem;
-  }
-
+.main {
   h2,
   h3 {
     margin: 0;
@@ -15,6 +9,14 @@
   h3 {
     font-weight: 400;
     color: #999;
+  }
+}
+
+.editor-choice {
+  padding: 1rem 12vw;
+
+  @media (max-width: 996px) {
+    padding: 1rem;
   }
 
   .list-card {
@@ -61,5 +63,32 @@
         }
       }
     }
+  }
+}
+
+.latest-articles {
+  padding: 1rem 12vw;
+
+  @media (max-width: 996px) {
+    padding: 1rem;
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    a {
+      text-decoration: none;
+      color: $pink;
+    }
+  }
+
+  .list-card {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
   }
 }
